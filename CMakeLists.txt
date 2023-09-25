@@ -45,7 +45,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -mthumb -mcpu=cortex-a9 -mfpu=vfpv3-d16")
 add_subdirectory(3rdparty)
 
 # Add the port-specific settings
-include("ports/${PORT}/port.cmake")
+include("ports/loader")
 
 include_directories(
     ${FREETYPE_INCLUDE_DIRS}
